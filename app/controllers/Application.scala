@@ -22,7 +22,6 @@ class Application extends Controller {
       s"<br>   ${a(16)},${a(17)},${a(18)}"+
       s"<br>"
     }.mkString("<br>")
-//  println(all)
   all
   }
 
