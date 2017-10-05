@@ -4,12 +4,17 @@ import algorithm.Solver
 import play.api._
 import play.api.mvc._
 
+import scala.util.Random
+
 class Application extends Controller {
 
   def index = Action {
-//    Solver.solve()
-    val solution = Solver.solvePuzzle()
-    Ok(views.html.index(toDiamondString(solution)))
+    Ok(views.html.index(None))
+  }
+
+  def getSolution = Action {
+    val solution = List(Random.shuffle(Solver.solvePuzzle()).head)
+    Ok(views.html.index(toDiamondString(solution), Some(solution)))
   }
 
   def toDiamondString(sol: List[List[Any]]) = {
@@ -22,7 +27,7 @@ class Application extends Controller {
       s"<br>   ${a(16)},${a(17)},${a(18)}"+
       s"<br>"
     }.mkString("<br>")
-  all
+  Some(all)
   }
 
 }

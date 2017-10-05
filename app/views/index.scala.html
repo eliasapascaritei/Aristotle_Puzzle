@@ -1,7 +1,185 @@
-@(sol: String)
+@(sol: Option[String], res: Option[List[List[Any]]] = None)
+
+<head>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/diamond.css")">
+    <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+</head>
 
 <title>Number's Puzzle</title>
-<div class="button"> Solutions</div>
-@Html(sol)
 
+<h3>Aristotle Puzzle</h3>
+<div class="container">
+    <div class="image">
+        <img src="/assets/images/image.jpg">
+    </div>
+    <div class="button" >
+        <a href="/getSolution"> Generate Solution</a>
+    </div>
+</div>
+    @if(sol.isDefined){
+        <div>
 
+        @Html(sol.get)
+        </div>
+    }
+    @if(res.isDefined) {
+        <div>sdfsdfsdf
+        <ul id="hexGrid">
+            <li class="hex">
+                <div class="hexIn">
+                        <p>1</p>
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        </div>
+    }
