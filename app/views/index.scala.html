@@ -17,11 +17,20 @@
         <a href="/getSolution"> Generate Solution</a>
     </div>
 </div>
-    @if(sol.isDefined){
+    <!-- @if(sol.isDefined){
         <div>
 
         @Html(sol.get)
         </div>
-    }
+    }-->
     @if(res.isDefined) {
+    @Html(res.get.map{a =>
+            s"<br>"
+            s"<br>&nbsp;&nbsp;&nbsp;&nbsp;${a(0)} - ${a(1)} - ${a(2)}" +
+            s"<br>&nbsp;&nbsp;${a(3)} - ${a(4)} - ${a(5)} - ${a(6)}" +
+            s"<br>&nbsp;${a(7)} - ${a(8)} - ${a(9)} - ${a(10)} - ${a(11)}" +
+            s"<br>&nbsp;&nbsp;${a(12)} - ${a(13)} - ${a(14)} - ${a(15)}" +
+            s"<br>&nbsp;&nbsp;&nbsp;${a(16)} - ${a(17)} - ${a(18)}" +
+            s"<br>"
+    }.mkString(" - "))
     }
