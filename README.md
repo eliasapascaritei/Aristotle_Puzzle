@@ -11,6 +11,8 @@ and then open a browser and type for address
 
 localhost:9000
 
+Click on "Generate Solution" button to see one from 12 solutions.
+
 Aristotle Puzzle rules:
 The rules of the game are fairly simple:
 
