@@ -1,4 +1,4 @@
-# Aristotle_Puzzle
+# Aristotle Puzzle
 
 Scala Play framework project with sbt
 
